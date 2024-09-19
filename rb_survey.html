@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+
+      Filename:   rb_survey.html
+
+   -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Red Ball Survey</title>
+    <link href="styles/rb_reset.css" rel="stylesheet" />
+    <link href="styles/rb_styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <img src="images/rb_logo.png" alt="Red Ball Pizza" id="logoimg" />
+      <nav>
+        <a id="navicon" href="#"><img src="images/rb_navicon.png" alt=""/></a>
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">menu</a></li>
+          <li><a href="#">directions</a></li>
+          <li><a href="#">coupons</a></li>
+          <li><a href="#">orders</a></li>
+          <li><a href="#">catering</a></li>
+          <li><a href="#">reviews</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h2>Customer Survey</h2>
+      <p>
+        Thank you for taking our customer survey. Your response helps Red Ball
+        Pizza maintain the tradition that has made us the top-rated pizzeria in
+        the metro area. All participants are automatically entered into a
+        monthly drawing to receive a
+        <em>Red Ball Express PizzaFest</em> containing two large pizzas, a
+        2-liter soda, and a side order of chicken wings. Check your e-mail inbox
+        for contest results.
+      </p>
+      <p>
+        Surveys are private and confidential. Red Ball Pizza will not share your
+        contact information with third parties, <em>ever</em>.
+      </p>
+      <p>Required values are marked by an asterisk (*)</p>
+    </section>
+
+    <!-- Form Section -->
+    <main>
+      <!-- What does GET do again? -->
+      <form method = "GET">
+
+        <!-- Name Button -->
+        <div>
+          <label for = "fullName">Full Name</label>
+          <input type = "text" id = "fullName" name = "fullName">
+        </div>
+
+        <!-- Satisfied Button -->
+        <div>
+          <label for = "satisfied"> Satisfied : </label>
+          <!--What does the name button do?-->
+          <br><input type="range" min="1" max="10" value="10" name = "satisfied">
+        </div>
+
+        <!-- Price Button -->
+        <div>
+          <label for = "price"> Price : </label>
+          <select name = "price">
+            <option value = "1" default>$</option>
+            <option value = "1">$$</option>
+            <option value = "1">$$$</option>
+            <option value = "1">$$$$</option>
+            <option value = "1">$$$$$</option>
+          </select>
+        </div>
+
+        <!-- Email Button -->
+        <div>
+          <label for="userEmail">Email*:</label>
+          <input type = "email" name = "userEmail" required>
+        </div>
+
+        <!-- Phone button -->
+        <div>
+          <label for="phoneNumber">Phone*:</label>
+          <input type = "tel" pattern = "[0-9]{3}-[0-9]" name = "phoneNumber" placeholder = "###-###-####">
+        </div>
+
+        <!-- Card Number entry-->
+        <div>
+          <label for="ccname">Name on Card</label>
+          <input type="text" id="ccname" name="cardName" placeholder="John Doe">
+          <br>
+
+          <label for="ccnum">Credit Card Number</label>
+          <input type="text" id="ccnum" name="cardNumber" placeholder="1111-2222-3333-4444" pattern = "[0-9]{4}-[0-9]{4}-[0-9]{4}" required>
+          <br>
+
+          <label for = "expDate">Expiration Date</label>
+          <input type="month" id="expDate" value="2024-07-22" min="2018-01-01" max="2029-12-31" name="expDate">
+          <br>
+
+
+        </div>
+
+        <!-- Submit Button -->
+        <div>
+          <input type = "submit" value = "Look Behind You">
+        </div>
+
+      </form>
+    </main>
+
+
+    <footer>
+      <h2>ORDER</h2>
+      <a href="#">Specials</a> <a href="#">Pizza</a> <a href="#">Pasta</a>
+      <a href="#">Wings</a> <a href="#">Sides</a> <a href="#">Salads</a>
+      <a href="#">Drinks</a> <a href="#">Desserts</a>
+      <h2>ABOUT US</h2>
+      <a href="#">Our Story</a> <a href="#">Blog</a> <a href="#">Catering</a>
+      <a href="#">School Lunch</a>
+      <h2>CUSTOMER SERVICE</h2>
+      <a href="#">Gluten Free Crust</a> <a href="#">Contact Us</a>
+      <a href="#">FAQs</a>
+      <h2>MY ACCOUNT</h2>
+      <a href="#">Create an Account</a> <a href="#">Sign In</a>
+      <a href="#">Order Status</a>
+      <h2>NUTRITION</h2>
+      <a href="#">Nutrition Information</a> <a href="#">Food Allergen</a>
+      <a href="#">Gluten Free Pizza</a>
+      <h2>POLICIES</h2>
+      <a href="#">Privacy Policy</a> <a href="#">Terms of Use</a>
+      <address>
+        Red Ball Pizza <br />
+        811 Beach Drive <br />
+        Ormond Beach, FL 32175 <br />
+        (386) 555 - 7499
+      </address>
+    </footer>
+  </body>
+</html>
